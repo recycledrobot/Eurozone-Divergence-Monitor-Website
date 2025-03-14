@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <script src="config.js"></script>
-    <script>
-        document.write(`
-            <title>${config.title}</title>
-            <meta name="description" content="${config.description}">
-            <meta name="keywords" content="${config.keywords}">
-            <meta name="author" content="${config.author}">
-            <meta name="robots" content="index, follow">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Live divergence monitor for market analysis.">
+    <meta name="keywords" content="divergence, market analysis, trading, live data">
+    <meta name="author" content="Divergence Monitor">
+    <meta name="robots" content="index, follow">
 
-            <!-- Open Graph Meta Tags -->
-            <meta property="og:title" content="${config.title}">
-            <meta property="og:description" content="${config.description}">
-            <meta property="og:image" content="${config.image}">
-            <meta property="og:url" content="${config.url}">
-            <meta property="og:type" content="website">
-            <meta property="og:site_name" content="${config.title}">
+    <!-- Open Graph (OG) Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Divergence Monitor">
+    <meta property="og:description" content="Track live market divergences with real-time data.">
+    <meta property="og:image" content="https://yourwebsite.com/preview-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Divergence Monitor">
 
-            <!-- Twitter Card -->
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="${config.title}">
-            <meta name="twitter:description" content="${config.description}">
-            <meta name="twitter:image" content="${config.image}">
-            <meta name="twitter:url" content="${config.url}">
-        `);
-    </script>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Divergence Monitor">
+    <meta name="twitter:description" content="Track live market divergences with real-time data.">
+    <meta name="twitter:image" content="https://yourwebsite.com/preview-image.jpg">
+    <meta name="twitter:url" content="https://yourwebsite.com/">
+
+    <title>Divergence Monitor</title>
 
     <style>
         html, body {
@@ -47,10 +44,6 @@
     </style>
 </head>
 <body>
-    <iframe id="iframe"></iframe>
-
-    <script>
-        document.getElementById("iframe").src = config.iframeSrc;
-    </script>
+    <iframe src="https://divergencemonitor.streamlit.app/?embed=true"></iframe>
 </body>
 </html>
